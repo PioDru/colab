@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "e07f39b7-eb7b-4552-8fa6-35e3872a0ce8",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28264127"
+	},
+	"item": [
+		{
+			"name": "New Request Railway",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-API-Key",
+						"value": "e6cc7883-9f1c-47ca-ba9b-adcdbba919ff",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/C:/Users/depie/Downloads/NORMAL2-IM-1436-0001.jpeg"
+					}
+				},
+				"url": {
+					"raw": "https://flaskproject-production.up.railway.app/predict",
+					"protocol": "https",
+					"host": [
+						"flaskproject-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Local",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-API-Key",
+						"value": "e6cc7883-9f1c-47ca-ba9b-adcdbba919ff",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/C:/Users/depie/Downloads/person1949_bacteria_4880.jpeg"
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/predict",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
